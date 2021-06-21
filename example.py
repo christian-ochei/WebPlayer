@@ -1,18 +1,12 @@
 import cv2
 import numpy as n
 from random import randint
-from DisplayIO import DisplayIO
+from WebPlayer import WebPlayer
 
 import pygame as pygame
 
-print(pygame.__name__)
 
-h = 700
-w = 700
-
-
-
-displayIO = DisplayIO(pygame)
+displayIO = WebPlayer(pygame)
 screen = displayIO.display
 print('x')
 

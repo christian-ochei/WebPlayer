@@ -75,16 +75,13 @@ class WebPlayer:
                 print(json.loads(request.form['keycode']))
 
                 # This Rapidly causes Errors
-                # try:
-                #     s.mouse_x = int(json.loads(request.form['x']))
-                # finally:
-                #     try:
-                #         s.mouse_y = int(json.loads(request.form['y']))
-                #     finally:
-                #         ...
-
-
-                s.mouse = s.mouse_x and s.mouse_y
+                try:
+                    s.mouse_x = int(json.loads(request.form['x']))
+                finally:
+                    try:
+                        s.mouse_y = int(json.loads(request.form['y']))
+                    finally:
+                        s.mouse = s.mouse_x and s.mouse_y
                 # print(s.mouse_x,s.mouse_y)
                 # print('x:',request.form['mouse_x'])
 
