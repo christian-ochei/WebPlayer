@@ -8,7 +8,6 @@ import pygame as pygame
 
 displayIO = WebPlayer(pygame)
 screen = displayIO.display
-print('x')
 
 running = True
 v=0
