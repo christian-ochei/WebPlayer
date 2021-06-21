@@ -9,7 +9,7 @@ def pr(*args):
     print(*args)
     return args[0]
 
-class DisplayIO:
+class WebPlayer:
 
 
     def __init__(s,Module,width=1000,height=1000):
